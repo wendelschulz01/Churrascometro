@@ -1,10 +1,33 @@
-.container{
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 300px;
-    margin:auto;
+
+body {
+    display: flex;
+    height: 100vh; /* Altura total da tela */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.img {
+    background-color: grey;
+    width: 70%; /* A imagem ocupa 70% da largura */
+    height: 100vh; /* Altura total da tela */
+}
+
+ img {
+    width: 100%; /* A imagem ocupará 100% da largura do seu container */
+    height: 100%; /* A imagem ocupará 100% da altura do seu container */
+    object-fit: cover; /* A imagem cobre o espaço mantendo a proporção */
+}
+
+.container {
+    width: 30%; /* O container ocupa 30% da largura */
+    height: 100vh; /* Altura total da tela */
     background-color: brown;
-    padding: 10px;
-    border-radius: 10px;
+    color: white;
+    padding: 40px;
+    box-sizing: border-box; /* Inclui o padding dentro das dimensões */
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo do container na vertical */
+    justify-content: flex-start; /* Alinha o conteúdo no topo */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
@@ -12,10 +35,26 @@ h1{
 }
 
 input{
+    ;
     display: block;
     width: 100%;
+    margin: 20px;
     padding: 5px;
     box-sizing: border-box;
     margin-bottom: 10px;
 
+}
+
+button{
+    display: block;
+    width: 100%;
+    margin: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.icAdult{
+    width = 24px;
+     height=24px;
 }
